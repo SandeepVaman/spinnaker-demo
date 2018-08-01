@@ -542,7 +542,7 @@ sed s/PROJECT/$PROJECT/g spinnaker/pipeline-deploy.json | curl -d@- -X \
     ```
 2. In the Spinnaker UI, click Pipelines on the top navigation bar
 3. Click Configure in the Deploy pipeline.
-
+```
 ### Run your pipeline manually
 The configuration you just created contains a trigger to start the pipeline when you push a new Git tag containing the prefix "v". In this section of the tutorial, you test the pipeline by running it manually. In the next section, you test it by pushing a Git tag and watching the pipeline run automatically.
 
