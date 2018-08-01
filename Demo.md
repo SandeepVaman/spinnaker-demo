@@ -225,7 +225,7 @@ git push origin master
 
 Configure your build triggers
 In this section, you configure Container Builder to build and push your Docker images every time you push Git tags to your source repository. Container Builder automatically checks out your source code, builds the Docker image from the Dockerfile in your repository, and pushes that image to Container Registry.
-<img src="cloud-build" alt="cloud build">
+<img src="images/cloud build.svg" alt="cloud build">
 1. In the GCP Console, click Build Triggers in the Container Registry section.
 
 2. Select Cloud Source Repository and click Continue.
@@ -264,8 +264,6 @@ You deploy to a scaled-down environment for integration testing. After the integ
 ### Create the application
 1. In the Spinnaker UI, click Actions, then click Create Application.
 
-<img src="Create an application" alt="Create an application">
-
 2. In the New Application dialog, enter the following fields:
 
 * Name: sample
@@ -288,10 +286,10 @@ export PROJECT=$(gcloud info --format='value(config.project)')
 sed s/PROJECT/$PROJECT/g spinnaker/pipeline-deploy.json | curl -d@- -X \
     POST --header "Content-Type: application/json" --header \
     "Accept: /" http://localhost:8080/gate/pipelines
-    ```
+```
 2. In the Spinnaker UI, click Pipelines on the top navigation bar
 3. Click Configure in the Deploy pipeline.
-```
+
 ### Run your pipeline manually
 The configuration you just created contains a trigger to start the pipeline when you push a new Git tag containing the prefix "v". In this section of the tutorial, you test the pipeline by running it manually. In the next section, you test it by pushing a Git tag and watching the pipeline run automatically.
 
