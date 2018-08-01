@@ -3,7 +3,7 @@ This tutorial shows you how to create a continuous delivery pipeline using Kuber
 
 ## Pipeline architecture
 
-<img src="" alt="pipeline architecture">
+<img src="images/spinnacker project architecture.png" alt="pipeline architecture">
 
 To continuously deliver application updates to your users, you need an automated process that reliably builds, tests, and updates your software. Code changes should automatically flow through a pipeline that includes artifact creation, unit testing, functional testing, and production rollout. In some cases, you want a code update to apply to only a subset of your users, so that it is exercised realistically before you push it to your entire user base. If one of these canary releases proves unsatisfactory, your automated procedure must be able to quickly roll back the software changes.
 
@@ -14,7 +14,7 @@ After your team decides the application is ready for production, one of your tea
 ## Application delivery pipeline
 In this tutorial, you build the continuous delivery pipeline shown in the following diagram.
 
-<img src="" alt="What we will do"/>
+<img src="images/what we will do.svg" alt="What we will do"/>
 
 ## Objectives
 * Set up your environment by launching Cloud Shell, creating a Kubernetes Engine cluster, and configuring your identity and user management scheme.
